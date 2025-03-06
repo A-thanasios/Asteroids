@@ -6,6 +6,7 @@ from asteroid import Asteroid
 from asteroidfield import AsteroidField
 from constants import *
 from player import Player
+from shot import Shot
 
 
 def main():
@@ -21,6 +22,7 @@ def main():
     Player.containers = (updatable, drawable)
     Asteroid.containers = (asteroids, drawable, updatable)
     AsteroidField.containers = updatable
+    Shot.containers = (drawable, updatable)
 
     player = Player(SCREEN_WIDTH / 2,
                     SCREEN_HEIGHT / 2)
