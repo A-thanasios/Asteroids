@@ -48,6 +48,7 @@ def main():
             for shot in shots:
                 if obj.collide(shot):
                     obj.get_hit()
+                    shot.kill()
 
         for obj in drawable:
             obj.draw(screen)
