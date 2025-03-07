@@ -47,7 +47,7 @@ def main():
         for obj in asteroids:
             for shot in shots:
                 if obj.collide(shot):
-                    obj.kill()
+                    obj.get_hit()
 
         for obj in drawable:
             obj.draw(screen)
